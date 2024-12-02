@@ -1,12 +1,12 @@
 import express from "express";
-import { placeOrderStripe, userOrders, updateStatus, verifyStripe  } from "../controllers/orderController.js";
+import { placeOrderStripe, userOrders, updateStatus, verifyStripe, allOrder } from "../controllers/orderController.js";
 import adminAuth from "../middleware/adminAuth.js";
 import authUser  from "../middleware/authUser.js";
 
 const orderRouter = express.Router();
 
 //Admin Features
-// orderRouter.post("/list", adminAuth, addOrder);
+orderRouter.post("/list", adminAuth, allOrder);
 orderRouter.post("/status", adminAuth, updateStatus);
 
 //Payment Features

@@ -27,6 +27,7 @@ const allowedOrigins = [
     "https://artnakkk-frontend-admin.vercel.app",
     "http://localhost:5175", // For local development
     "http://localhost:5176", // For local development
+    "http://localhost:5173"
   ];
   
   // Configure CORS
@@ -48,9 +49,9 @@ const allowedOrigins = [
 
 // API endpoints
 app.use("/api/users", userRoutes)
-app.use("/api/products", productRoutes)
+app.use("/api/product", productRoutes)
 app.use("/api/cart", cartRoutes)
-app.use("/api/orders", orderRoutes)
+app.use("/api/order", orderRoutes)
 
 app.get("/", (req, res) => {
     res.send("API WORKING")
