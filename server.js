@@ -27,7 +27,8 @@ const allowedOrigins = [
     "https://artnakkk-frontend-admin.vercel.app",
     "http://localhost:5175", // For local development
     "http://localhost:5176", // For local development
-    "http://localhost:5173"
+    "http://localhost:5173",
+    "https://kittipun-frontend.vercel.app/"
   ];
   
   // Configure CORS
