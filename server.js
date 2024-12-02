@@ -24,11 +24,10 @@ app.use(express.json())
 
 // Define allowed origins
 const allowedOrigins = [
-    "https://artnakkk-frontend-admin.vercel.app",
+    "https://kittipun-frontend.vercel.app",
     "http://localhost:5175", // For local development
     "http://localhost:5176", // For local development
-    "http://localhost:5173",
-    "https://kittipun-frontend.vercel.app/"
+    "http://localhost:5173"
   ];
   
   // Configure CORS
